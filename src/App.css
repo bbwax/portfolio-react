@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  font-family: 'Raleway';
+  /* font-family: 'Raleway'; */
+  font-family: 'Futura';
 }
 
 .App-logo {
@@ -51,7 +52,7 @@ li:not(:last-child) {
   margin-right: 2rem;
 }
 
-a {
+.a-header {
   color: #000000;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -61,9 +62,10 @@ a {
 
 }
 
-a:hover {
+.a-header:hover {
   color: #666;
 }
+
 
 #contact-tag {
   width: 20%;
@@ -77,6 +79,13 @@ a:hover {
 
 .li-header {
   margin: 20px;
+}
+
+.image{
+  max-width:500px;
+  max-height: 500px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 @keyframes App-logo-spin {

@@ -9,6 +9,7 @@ function Header({ currentPage, handlePageChange }) {
                     <li className='li-header'>
                         <a
                             href="#about"
+                            class= 'text-decoration-none a-header'
                             onClick={() => handlePageChange('About')}
                         >
                             About
@@ -17,6 +18,7 @@ function Header({ currentPage, handlePageChange }) {
                     <li className='li-header'>
                         <a
                             href="#projects"
+                            class= 'text-decoration-none a-header'
                             onClick={() => handlePageChange('Projects')}
                         >
                             Projects
@@ -25,15 +27,17 @@ function Header({ currentPage, handlePageChange }) {
                     <li className='li-header'>
                         <a
                             href="#resume"
+                            class= 'text-decoration-none a-header'
                             onClick={() => handlePageChange('Resume')}
                         >
                             Resume
                         </a>
                     </li>
-                    <li className='li-header'>
+                    <li className='li-header '>
                         <a
                             id='contact-tag'
                             href="#contact"
+                            class= 'text-decoration-none a-header'
                             onClick={() => handlePageChange('contact')}
                             >
                                 Contact
