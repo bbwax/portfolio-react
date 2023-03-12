@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card';
+import SafeZone from "../images/SafeZone.png"
 
 export default function Projects() {
     const projects = [
@@ -14,7 +15,13 @@ export default function Projects() {
             title: "Media Map",
             img: 'https://i.imgur.com/cTtucwK.png',
             linkAddress: 'https://stream-team.herokuapp.com/',
-        }
+        },
+        {
+          id: 3,
+          title: "SafeZone",
+          img: SafeZone,
+          linkAddress: 'https://safezone.herokuapp.com/',
+      }
     ];
 
 
