@@ -29,8 +29,10 @@
   color: #61dafb;
 }
 
-.nav-bar {
+.navbar {
   display: flex;
+  justify-content: space-between;
+  
 }
 
 .h1-header {
@@ -160,4 +162,10 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0069d9;
+}
+
+
+#initials{
+  height: 150px;
+  width: 150px;
 }

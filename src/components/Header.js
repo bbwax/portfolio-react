@@ -1,49 +1,58 @@
 import React from 'react';
+import initials from "../components/images/BW.png";
 
 function Header({ currentPage, handlePageChange }) {
     return (
         <header className="App-header">
-            <h1 className="h1-header">Braxton Waxdeck</h1>
-            <nav className='nav-bar'>
-                <ul className='ul-header'>
-                    <li className='li-header'>
-                        <a
-                            href="#about"
-                            class= 'text-decoration-none a-header'
-                            onClick={() => handlePageChange('About')}
-                        >
-                            About
-                        </a>
-                    </li>
-                    <li className='li-header'>
-                        <a
-                            href="#projects"
-                            class= 'text-decoration-none a-header'
-                            onClick={() => handlePageChange('Projects')}
-                        >
-                            Projects
-                        </a>
-                    </li>
-                    <li className='li-header'>
-                        <a
-                            href="#resume"
-                            class= 'text-decoration-none a-header'
-                            onClick={() => handlePageChange('Resume')}
-                        >
-                            Resume
-                        </a>
-                    </li>
-                    <li className='li-header '>
-                        <a
-                            id='contact-tag'
-                            href="#contact"
-                            class= 'text-decoration-none a-header'
-                            onClick={() => handlePageChange('contact')}
+            <nav className="navbar navbar-expand-lg navbar-dark">
+                <a className="navbar-brand font-tertiary h3" href="index.html">
+                    <img id="initials" src={initials} alt="BW" />
+                </a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <a
+                                href="#about"
+                                className="nav-link text-decoration-none"
+                                onClick={() => handlePageChange('About')}
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a
+                                href="#projects"
+                                className="nav-link text-decoration-none"
+                                onClick={() => handlePageChange('Projects')}
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a
+                                href="#resume"
+                                className="nav-link text-decoration-none"
+                                onClick={() => handlePageChange('Resume')}
+                            >
+                                Resume
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a
+                                
+                                href="#contact"
+                                className="nav-link text-decoration-none"
+                                onClick={() => handlePageChange('contact')}
                             >
                                 Contact
-                        </a>
-                    </li>
-                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
     );
