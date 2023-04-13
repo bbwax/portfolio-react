@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import initials from "../components/images/BW.png";
 
 function Header({ currentPage, handlePageChange }) {
@@ -11,8 +11,12 @@ function Header({ currentPage, handlePageChange }) {
             } else {
                 setShrink(false);
             }
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -31,7 +35,7 @@ function Header({ currentPage, handlePageChange }) {
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className={`collapse navbar-collapse text-center`} id="navbarNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <a
