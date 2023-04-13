@@ -197,3 +197,11 @@ button[type="submit"]:hover {
       font-size: 1.5rem;
   }
 }
+
+.navbar-nav{
+  align-items: flex-end;
+}
+
+#contact-link{
+  padding-right: 2rem;
+}

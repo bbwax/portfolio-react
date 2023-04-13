@@ -52,7 +52,7 @@ function Header({ currentPage, handlePageChange }) {
                         </li>
                         <li className="nav-item">
                             <a
-
+                                id="contact-link"
                                 href="#contact"
                                 className="nav-link text-decoration-none"
                                 onClick={() => handlePageChange('contact')}
