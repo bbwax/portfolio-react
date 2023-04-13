@@ -31,7 +31,7 @@ export default function Projects() {
       <h1>Projects</h1>
       {projects.map(project => (
         <Card key={project.id} heading={project.title}>
-          <a href={project.linkAddress}><img class='image' src={project.img} alt={project.title}></img></a>
+          <a href={project.linkAddress}><img className='image' src={project.img} alt={project.title}></img></a>
         </Card>
       ))}
     </div>

@@ -20,7 +20,7 @@ export default function PageContainer() {
       return <Resume />;
     }
     if (currentPage === 'Home') {
-      return <Home />;
+      return <Home  handlePageChange={handlePageChange}/>;
     }
     return <Contact />;
   };

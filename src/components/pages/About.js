@@ -23,7 +23,7 @@ export default function About() {
         HTTP request methods, GraphQL, deployment and delivery, Heroku, Git, Github Pages, shell scripting,
         unit testing, and continuous integration.
 
-        I am a creative problem solver who enjoys working collaborativeley. I am passionate about delivering
+        I am a creative problem solver who enjoys working collaboratively. I am passionate about delivering
         high-quality code that meets the needs of clients and users.
         `}
       </p>

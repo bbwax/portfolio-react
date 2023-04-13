@@ -36,6 +36,14 @@
   
 }
 
+.navbar.shrink {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: padding-top 0.3s, padding-bottom 0.3s, padding-left 0.3s, padding-right 0.3s;
+}
+
 .nav-link{
   text-transform: uppercase;
 }
@@ -44,6 +52,13 @@
   margin-left: 50px;
   font-size: 60px;
   
+}
+
+#welcome-text{
+  
+    display: flex;
+    font-size: 88px;
+    position: relative;
 }
 
 .ul-header {
@@ -196,7 +211,15 @@ button[type="submit"]:hover {
   .text-gray {
       font-size: 1.5rem;
   }
+ 
 }
+
+@media (max-width: 900px) {
+  #welcome-text{
+    font-size: 60px;
+  }
+}
+
 
 .navbar-nav{
   align-items: flex-end;
@@ -260,3 +283,25 @@ button[type="submit"]:hover {
     transform: translateX(0);
 }
 }
+
+.section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+body {
+  padding-top: 4.5rem;
+}
+
