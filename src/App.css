@@ -179,7 +179,7 @@ button[type="submit"]:hover {
 }
 
 .text-gray{
-  color: rgba(0,0,0,.5);
+  color: antiquewhite
 }
 
 .hero-area {
@@ -204,4 +204,59 @@ button[type="submit"]:hover {
 
 #contact-link{
   padding-right: 2rem;
+}
+
+.container{
+  position: relative;
+  z-index: 2; 
+}
+
+.plant-animation-left,
+.plant-animation-right {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  max-width: 150px;
+  z-index: 1
+}
+
+.plant-animation-left {
+  left: 0; 
+  height: 100%;
+  background-image: url('./components/images/plants-left.PNG'); 
+  animation: plantLeavesLeftGrow 5s ease-in-out forwards;
+}
+
+.plant-animation-right {
+  right: 0; 
+  height: 100%;
+  background-image: url('./components/images/plants-right.PNG'); 
+  animation: plantLeavesRightGrow 5s ease-in-out forwards;
+}
+
+@keyframes plantLeavesLeftGrow {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); 
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+@keyframes plantLeavesRightGrow {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); 
+}
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
 }
