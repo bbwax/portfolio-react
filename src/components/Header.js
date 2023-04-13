@@ -4,7 +4,7 @@ import initials from "../components/images/BW.png";
 function Header({ currentPage, handlePageChange }) {
     return (
         <header className="App-header">
-            <nav className="navbar navbar-expand-lg navbar-dark">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand font-tertiary h3" href="index.html">
                     <img id="initials" src={initials} alt="BW" />
                 </a>
@@ -14,6 +14,15 @@ function Header({ currentPage, handlePageChange }) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
+                        <li className="nav-item">
+                            <a
+                                href="#home"
+                                className="nav-link text-decoration-none"
+                                onClick={() => handlePageChange('Home')}
+                            >
+                                Home
+                            </a>
+                        </li>
                         <li className="nav-item">
                             <a
                                 href="#about"
@@ -43,7 +52,7 @@ function Header({ currentPage, handlePageChange }) {
                         </li>
                         <li className="nav-item">
                             <a
-                                
+
                                 href="#contact"
                                 className="nav-link text-decoration-none"
                                 onClick={() => handlePageChange('contact')}
