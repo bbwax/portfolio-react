@@ -9,6 +9,7 @@ export default function Resume() {
       <h1>Resume</h1>
       <p>
         To view my resume, please click the following link:
+        <br />
         <a href={resumeURL} target="_blank" rel="noreferrer" className='btn btn-info'>View Resume</a>
       </p>
       </div>

@@ -14,46 +14,52 @@ export default function Contact() {
     console.log('Message:', message);
   };
 
+  const sectionStyle = {
+    padding: "2rem",
+  };
+
   return (
     <div>
-     
-      <Card heading="Contact Me">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={message}
-              onChange={(event) => setMessage(event.target.value)}
-              required
-            />
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </Card>
+
+      <section className='bg-main' style={sectionStyle}>
+        <Card heading="Contact Me">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+                required
+              />
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </Card>
+      </section>
     </div>
   );
 }
